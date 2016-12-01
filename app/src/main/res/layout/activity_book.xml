@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4ED1A2">
+
+
+    <TextView
+        android:text="Book's Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/imageButtonAdd"
+        android:background="@mipmap/upload"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/editTextTitle"
+        android:layout_alignEnd="@+id/imageButtonAdd"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Title"
+        android:background="#5AD7B1"
+        android:textSize="22sp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/trash"
+        android:id="@+id/imageButtonTrash"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignEnd="@+id/editTextTitle"
+        android:visibility="invisible" />
+
+    <TextView
+        android:text="Books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:layout_below="@+id/editTextTitle"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="17dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="45dp"
+        android:layout_alignEnd="@+id/imageButtonTrash"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/listViewBook"
+        android:background="#5AD7B1"/>
+
+</RelativeLayout>
